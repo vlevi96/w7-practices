@@ -1,0 +1,138 @@
+/*
+1. kellő távolság legyen a beviteli mezők között
+1. kellő távolság legyen a beviteli mezők között és a mezőkben
+2. elég nagy legyen az input mező
+3. label ne legyen egy sorban az inputtal
+4. label és az input össze legyen kötve (lást label for="")
+5. minden képernyőméreten ugyanúgy használható legyen
+6.rendezett legyen legyen egy vonalban
+7. lehessen tabolni (ha formban van benne akkor lehet)
+8. logikus sorrend legyen
+9. aktuális input mező kiemelkedjen
+10. gomb legyen hangsúlyos
+11. legyen megneveze?
+12. kontraszt
+13. font
+14. középre
+*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+  
+    background: transparent;
+  
+    font-family: inherit;
+    
+    text-decoration: none;
+}
+  
+ol, ul, li {
+    list-style:none;
+    display:block;
+}
+  
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+  
+a img {
+    border: none
+}
+  
+button, a {
+    cursor: pointer;
+    color: inherit
+ }
+  
+textarea {
+    resize: none
+}
+  
+button, input, textarea {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border-radius: 0
+}
+
+#inputValue
+{
+  display: none;
+}
+
+form 
+{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+
+  border: 5px ridge #97CAEF;
+  border-radius: 5px;
+
+  background-color: #e4e6e79a;
+  padding:10px;
+
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+form input
+{
+  border: 5px ridge #97CAEF;
+  border-radius: 5px;
+  
+  padding:5px;
+  width: 100%;
+  margin-bottom:20px;
+  font-weight: bold;
+}
+
+label
+{
+  text-align: left;
+}
+
+form input[type=checkbox]
+{
+  position: relative;
+  transform: translateY(25%);
+  width:20px;
+  height:20px;
+  margin-bottom:0;
+  
+}
+
+form input[type=checkbox]:checked
+{
+  background-color:#008aec;
+}
+
+form button
+{
+  position: relative;
+  width:90%;
+  padding: 5px;
+
+  color: white;
+  font-size: 30px;
+
+  border: 5px ridge #97CAEF;
+  border-radius: 5px;
+  background-color: #6eb7eb;
+
+  margin-left: 5%;
+  margin-top: 15px;
+}
+
+form select
+{
+  border: 5px ridge #97CAEF;
+  border-radius: 5px;
+  background-color: white;
+ 
+  font-size: 15px;
+  font-weight: bold;
+}
